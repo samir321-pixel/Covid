@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{ url_for('static',filename='img/home-bg.webp')}}')">
+    <div class=" overlay
+"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1>Covid 19</h1>
+                    <span class="subheading">Stay Safe Stay Home</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+{% for post in posts %}
+<div class="post-preview">
+    <a href="/post/{{post.slug}}">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        <h2 class="post-title">{{ post.title }}
+
+        </h2>
+        <h3 class="post-subtitle">
+            {{post.tagline}}
+        </h3>
+    </a>
+    <p class="post-meta">Posted by
+        <a href="#">Admin</a>
+        on {{post.date}}</p>
+
+
+
+{{post.content[0:143]}}...
+    </div>
+    </div>
+<hr>
+</li></a>
+{% endfor %}
+
+    </div>
+
+    <hr>
+    <!-- Pager -->
+<div class="col-lg-8 col-md-10 mx-auto">
+    <div class="clearfix">
+        <a class="btn btn-primary float-left" href="{{prev}}">&larr; Previous </a>
+        <a class="btn btn-primary float-right" href="{{next}}">Next &rarr;</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}

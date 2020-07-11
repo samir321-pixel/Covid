@@ -1,0 +1,19 @@
+{
+  "params": {
+    "local_server": "True",
+    "local_uri": "mysql://root:sam123@localhost/coding",
+    "prod_uri": "mysql://root:sam123@localhost/coding",
+    "fb_url": "https://facebook.com/coding",
+    "tw_url": "twitter.com/coding",
+    "gh_url": "github.com/coding",
+    "gmail-user": "",
+    "gmail-password": "",
+   "about_text": "Hi my name is harry and I create programming tutorials and I am a good boy",
+    "no_of_posts": "4",
+    "blog_name": "samir",
+    "login_image": "login.png",
+    "admin_user":"samir",
+    "admin_password": "123",
+    "upload_location": "C:\\Users\\Criminal\\Videos"
+  }
+}
